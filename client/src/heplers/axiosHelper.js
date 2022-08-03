@@ -1,5 +1,6 @@
 import axios from "axios";
-const rootUrl = "http://localhost:8000";
+const rootUrl =
+  process.env.NODE_ENV === "porduction" ? "" : "http://localhost:8000";
 const userEP = rootUrl + "/api/v1/user";
 const transactionEP = rootUrl + "/api/v1/transaction";
 
