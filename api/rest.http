@@ -1,0 +1,41 @@
+###  Main api
+GET http://localhost:8000
+
+#APIS
+
+### Post new user
+POST  http://localhost:8000/api/v1/user
+Content-Type: application/json
+
+{
+    "email": "fsfa",
+    "password": "dsfsd"
+}
+### Post new user
+POST  http://localhost:8000/api/v1/user/login
+Content-Type: application/json
+
+{
+    "email": "dhahi@rgrs",
+    "password": "subin"
+}
+
+
+
+
+#============= transaction api =====================#
+### Post new user
+POST  http://localhost:8000/api/v1/transaction
+Content-Type: application/json
+
+{
+    "type": "income",
+    "title": "shopping",
+    "amount": 3453
+}
+
+### get all the transaction for specific use
+### post new transaction
+
+GET  http://localhost:8000/api/v1/transaction
+authorization: 62e9c9438602a527c46e0823

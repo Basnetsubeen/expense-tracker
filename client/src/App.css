@@ -1,0 +1,7 @@
+.App {
+  background: rgb(248, 243, 243);
+  min-height: 100vh;
+}
+.login-form {
+  width: 400px;
+}
