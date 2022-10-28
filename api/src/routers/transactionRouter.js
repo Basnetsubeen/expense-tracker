@@ -57,7 +57,7 @@ router.delete("/:_id", async (req, res, next) => {
       if (result._id) {
         return res.json({
           status: "success",
-          message: "The transaction has been delted",
+          message: "The transaction has been deleted",
         });
       }
     }

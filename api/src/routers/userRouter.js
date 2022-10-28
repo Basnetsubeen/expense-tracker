@@ -43,7 +43,7 @@ router.post("/", async (req, res, next) => {
             result.email,
         })
       : res.json({
-          status: "success",
+          status: "error",
           message: "Unable to register, please try again",
         });
   } catch (error) {

@@ -2,7 +2,7 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 import path from "path";
 
 app.use(express.json());
@@ -18,6 +18,7 @@ dbConnect();
 import userRouter from "./src/routers/userRouter.js";
 import transactionRouter from "./src/routers/transactionRouter.js";
 import { authMiddlewares } from "./src/middlewares/authMiddlewares.js";
+import { env } from "process";
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/transaction", authMiddlewares, transactionRouter);
 
